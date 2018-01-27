@@ -12,7 +12,7 @@ restricted access to iOS data system (sandbox for each app)
 | <Application_Home>/ AppName.app | Bundle.main | Bilder, Texte, etc. (1) (E) |
 | <Application_Home>/ Documents/  | urls(for: .documentDirectory, in: .userDomainMask) | Benutzerdaten, Dokumente (2) (E) |                                           
 | <Application_Home>/ Library/Preferences     | UserDefaults() | Voreinstellungen (2) (E)  |
-| <Application_Home>/ Library/Caches  | urls(for: .cachesDirectory, in: .userDomainMask)  | Temporäre Dateien (3) (E) |
+| <Application_Home>/ Library/Caches  | urls(for: .cachesDirectory, in: .userDomainMask)  | Temporäre Dateien (3) (E) Verlust bei Reset |
 |  <Application_Home>/ tmp/      | NSTemporaryDirectory() | Temporäre Dateien (3) (N) |
 
 
