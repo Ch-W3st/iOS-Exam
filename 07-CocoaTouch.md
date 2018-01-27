@@ -116,7 +116,7 @@ Def.: an action is a method which can be combined with `Controls`
 Def.: is a property which has a reference to the object
 * use action: drag and drop while holding `ctrl`
 * keyword: `@IBOutlet func ...`
-***used for change the way sth. looks*
+**used for change the way sth. looks**
 
 
 
