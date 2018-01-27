@@ -23,8 +23,8 @@
 * foreground / background
 
 #### Methods
-*  application(_:didFinishLaunchingWithOptions:)  
-*  applicationWillTerminate(_:) 
+*  application(_:didFinishLaunchingWithOptions:)  --> load data while opening
+*  applicationWillTerminate(_:) --> safe data before app quits
 *  applicationDidBecomeActive(_:) 
 *  applicationWillResignActive(_:) 
 *  applicationWillEnterForeground(_:) 
