@@ -3,6 +3,26 @@
 * Cocoa -> Application Kit Framework
 * Cocoa Touch -> UIKit Framework
 
+### Datastructure
+
+restricted access to iOS data system (sandbox for each app)
+
+| Directory       | Access          | Usage |
+| ------------- |:-------------:| -----:|
+| <Application_Home>/ AppName.app | Bundle.main | Bilder, Texte, etc. (1) (E) |
+| <Application_Home>/ Documents/  | urls(for: .documentDirectory, in: .userDomainMask) | Benutzerdaten, Dokumente (2) (E) |                                           
+| <Application_Home>/ Library/Preferences     | UserDefaults() | Voreinstellungen (2) (E)  |
+| <Application_Home>/ Library/Caches  | urls(for: .cachesDirectory, in: .userDomainMask)  | Temporäre Dateien (3) (E) |
+|  <Application_Home>/ tmp/      | NSTemporaryDirectory() | Temporäre Dateien (3) (N) |
+
+
+  
+* (1)  kein Backup, aber mit Applikation gespeichert 
+* (2)  Backup durch iTunes
+* (3)  kein Backup durch iTunes
+* (E) Daten bleiben zwischen Programmstarts erhalten
+* (N) Daten bleiben nicht erhalten
+
 ### Main components of a project
 
 * AppDelegate (helper class)
@@ -13,7 +33,9 @@
 
 :dart: iOS Deployment target --> set the minimum version target e.g. 8.1 
 
-### App delegate
+### AppDelegate.swift
+
+could be a place for a model e.g. address book
 
 * Q: How to safe a file before closing app?
 * A: The app is an instance of UIApplication. Customize UIApplication!
