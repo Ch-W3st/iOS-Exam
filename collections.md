@@ -43,9 +43,9 @@ let lengthes = names.map { (name) -> Int in
 } 
 ```
 
-# Dictionary
+## Dictionary
 ```swift
-var airports = ["TXL": "Tegel", "SFX": "Schönefeld"] 
+var airports = ["TXL": "Tegel", "SFX": "Schönefeld"] 
 
 // access 
 if let airportName = airports["TXL"] { // airports["TXL"] ist ein Optional vom Typ String?
