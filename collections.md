@@ -1,10 +1,9 @@
 # Collections 
-- [Collections](#collections)
-    - [Array](#array)
-    - [Dictionary](#dictionary)
-    - [Tupel](#tupel)
-    - [Enums](#enums)
-    - [Suchen in Collections](#suchen-in-collections)
+- [Array](#array)
+- [Dictionary](#dictionary)
+- [Tupel](#tupel)
+- [Enums](#enums)
+- [Suchen in Collections](#suchen-in-collections)
 
 ## Array
 ```swift
